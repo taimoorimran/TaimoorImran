@@ -1,4 +1,4 @@
-export const devloperMeta = {
+export const developerMeta = {
     name: "Taimoor Imran",
     designation: "Taimoor Imran"
 };

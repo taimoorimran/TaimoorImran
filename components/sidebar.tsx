@@ -1,3 +1,4 @@
+import { developerMeta } from "@/lib/constants";
 import { CalendarRange, ChevronDown, Mail, MapPin, Smartphone } from "lucide-react";
 import Image from "next/image";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -45,7 +46,7 @@ const Sidebar = () => {
                     <Image src="/images/taimoor-avatar-face.png" alt="Taimoor Imran" width="80" height="80" className="block md:hidden" />
                 </figure>
                 <div className="info-content">
-                    <h1 className="name" title="Taimoor Imran">Taimoor Imran</h1>
+                    <h1 className="name" title="Taimoor Imran">{developerMeta.name}</h1>
                     <p className="title">Software Engineer</p>
                 </div>
                 <button className="info_more-btn" data-sidebar-btn>

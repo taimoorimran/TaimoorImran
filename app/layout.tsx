@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { devloperMeta } from "@/lib/constants";
+import { developerMeta } from "@/lib/constants";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -12,8 +12,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: `${devloperMeta.name} | Portfolio`,
-  description: `Portfolio website of ${devloperMeta.name} | ${devloperMeta.designation}`,
+  title: `${developerMeta.name} | Portfolio`,
+  description: `Portfolio website of ${developerMeta.name} | ${developerMeta.designation}`,
 };
 
 export default function RootLayout({
