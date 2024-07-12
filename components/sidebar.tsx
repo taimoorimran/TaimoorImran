@@ -40,7 +40,7 @@ const Sidebar = () => {
             <div className="sidebar-info">
                 <figure className="avatar-box">
                     <Image src="/images/taimoor-avatar-wave.png" alt="Taimoor Imran" width="180" height="180" className="hidden md:block" />
-                    <Image src="/images/taimoor-avatar-wave.png" alt="Taimoor Imran" width="80" height="80" className="block md:hidden" />
+                    <Image src="/images/taimoor-avatar-face.png" alt="Taimoor Imran" width="80" height="80" className="block md:hidden" />
                 </figure>
                 <div className="info-content">
                     <h1 className="name" title="Taimoor Imran">Taimoor Imran</h1>
