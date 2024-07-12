@@ -9,10 +9,10 @@ const Layout = ({
     return (
         <main className="border border-red-800">
             <Sidebar />
-            {/* 
-            <div className="p-48 border border-red-200 w-[800px]">
+            <div className="main-content border border-yellow-800">
+                <Navbar />
                 {children}
-            </div> */}
+            </div>
         </main>
     )
 }

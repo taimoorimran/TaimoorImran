@@ -1,4 +1,4 @@
-import { CalendarRange, ChevronDown, Github, Instagram, Linkedin, Mail, MapPin, Smartphone } from "lucide-react";
+import { CalendarRange, ChevronDown, Mail, MapPin, Smartphone } from "lucide-react";
 import Image from "next/image";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
