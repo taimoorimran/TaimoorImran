@@ -1,1 +1,1 @@
-**Developer portfolio under construction 🚧 – stay tuned for awesomeness! 🚀**
+**Portfolio under construction 🚧 – stay tuned for awesomeness! 🚀**
