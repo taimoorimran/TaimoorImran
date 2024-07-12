@@ -1,4 +1,4 @@
-import { CalendarRange, ChevronDown, Github, Mail, MapPin, Smartphone } from "lucide-react";
+import { CalendarRange, ChevronDown, Github, Instagram, Linkedin, Mail, MapPin, Smartphone } from "lucide-react";
 import Image from "next/image";
 
 interface ContactItemProps {
@@ -103,13 +103,13 @@ const Sidebar = () => {
                     </li>
                     <li className="social-item">
                         <a href="#" className="social-link">
-                            <Smartphone className="size-4" />
+                            <Linkedin className="size-4" />
                             {/* <ion-icon name="logo-linkedin"></ion-icon> */}
                         </a>
                     </li>
                     <li className="social-item">
                         <a href="#" className="social-link">
-                            <Smartphone className="size-4" />
+                            <Instagram className="size-4" />
                             {/* <ion-icon name="logo-instagram"></ion-icon> */}
                         </a>
                     </li>
