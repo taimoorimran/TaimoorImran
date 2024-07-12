@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
+import { devloperMeta } from "@/lib/constants";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -10,8 +11,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Taimoor Imran | Portfolio",
-  description: "Portfolio of Taimoor Imran / MERN stack developer",
+  title: `${devloperMeta.name} | Portfolio`,
+  description: `Portfolio website of ${devloperMeta.name} | ${devloperMeta.designation}`,
 };
 
 export default function RootLayout({
