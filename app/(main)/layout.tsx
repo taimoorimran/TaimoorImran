@@ -7,9 +7,9 @@ const Layout = ({
     children: React.ReactNode;
 }>) => {
     return (
-        <main className="border border-red-800">
+        <main className="">
             <Sidebar />
-            <div className="main-content border border-yellow-800">
+            <div className="main-content">
                 <Navbar />
                 {children}
             </div>
