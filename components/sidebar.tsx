@@ -1,5 +1,6 @@
 import { CalendarRange, ChevronDown, Github, Instagram, Linkedin, Mail, MapPin, Smartphone } from "lucide-react";
 import Image from "next/image";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 interface ContactItemProps {
     children: React.ReactNode;
@@ -38,7 +39,8 @@ const Sidebar = () => {
         <aside className="sidebar" data-sidebar>
             <div className="sidebar-info">
                 <figure className="avatar-box">
-                    <Image src="/images/taimoor-avatar-wave.png" alt="Taimoor Imran" width="180" height="180" />
+                    <Image src="/images/taimoor-avatar-wave.png" alt="Taimoor Imran" width="180" height="180" className="hidden md:block" />
+                    <Image src="/images/taimoor-avatar-wave.png" alt="Taimoor Imran" width="80" height="80" className="block md:hidden" />
                 </figure>
                 <div className="info-content">
                     <h1 className="name" title="Taimoor Imran">Taimoor Imran</h1>
@@ -68,13 +70,13 @@ const Sidebar = () => {
                 <div className="separator"></div>
                 <ul className="social-list">
                     <SocialItem link="#">
-                        <Github className="size-4" />
+                        <FaGithub className="size-4" />
                     </SocialItem>
                     <SocialItem link="#">
-                        <Linkedin className="size-4" />
+                        <FaLinkedin className="size-4" />
                     </SocialItem>
                     <SocialItem link="#">
-                        <Instagram className="size-4" />
+                        <FaInstagram className="size-4" />
                     </SocialItem>
                 </ul>
             </div>
