@@ -1,13 +1,14 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
-import { cn } from "@/lib/utils";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { devloperMeta } from "@/lib/constants";
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
 });
 
 export const metadata: Metadata = {
@@ -43,6 +44,7 @@ export default function RootLayout({
         <link rel="manifest" href="/icons/site.webmanifest" />
       </head>
       <body
+        className={poppins.className}
       >
         {children}
       </body>

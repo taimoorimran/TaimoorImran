@@ -20,24 +20,25 @@ const ContactItem = ({ icon, title, link, text }: ContactItemProps) => (
 );
 
 interface SocialItemProps {
-    // icon: React.ElementType;
-    icon: string;
+    children: React.ReactNode;
     link: string;
 }
 
-const SocialItem = ({ icon, link }: SocialItemProps) => (
-    <li className="social-item">
-        <a href={link} className="social-link">
-            {/* <ion-icon name={icon}></ion-icon> */}
-        </a>
-    </li>
-);
+const SocialItem = ({ link, children }: SocialItemProps) => {
+    return (
+        <li className="social-item">
+            <a href={link} className="social-link">
+                {children}
+            </a>
+        </li>
+    )
+};
 const Sidebar = () => {
     return (
         <aside className="sidebar" data-sidebar>
             <div className="sidebar-info">
                 <figure className="avatar-box">
-                    <Image src="/images/taimoor-avatar-wave.png" alt="Taimoor Imran" width="80" height={100} />
+                    <Image src="/images/taimoor-avatar-wave.png" alt="Taimoor Imran" width="180" height="180" />
                 </figure>
                 <div className="info-content">
                     <h1 className="name" title="Taimoor Imran">Taimoor Imran</h1>
@@ -95,24 +96,15 @@ const Sidebar = () => {
                 </ul>
                 <div className="separator"></div>
                 <ul className="social-list">
-                    <li className="social-item">
-                        <a href="#" className="social-link">
-                            <Github className="size-4" />
-                            {/* <ion-icon name="logo-github"></ion-icon> */}
-                        </a>
-                    </li>
-                    <li className="social-item">
-                        <a href="#" className="social-link">
-                            <Linkedin className="size-4" />
-                            {/* <ion-icon name="logo-linkedin"></ion-icon> */}
-                        </a>
-                    </li>
-                    <li className="social-item">
-                        <a href="#" className="social-link">
-                            <Instagram className="size-4" />
-                            {/* <ion-icon name="logo-instagram"></ion-icon> */}
-                        </a>
-                    </li>
+                    <SocialItem link="#">
+                        <Github className="size-4" />
+                    </SocialItem>
+                    <SocialItem link="#">
+                        <Linkedin className="size-4" />
+                    </SocialItem>
+                    <SocialItem link="#">
+                        <Instagram className="size-4" />
+                    </SocialItem>
                 </ul>
             </div>
         </aside>
