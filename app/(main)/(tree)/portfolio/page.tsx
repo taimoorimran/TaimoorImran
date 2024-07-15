@@ -1,4 +1,39 @@
 import Image from "next/image";
+import Link from "next/link";
+import { IoEyeOutline } from "react-icons/io5";
+
+interface ProjectItemProps {
+  imgSrc?: string;
+  url?: string;
+  name: string;
+  category: string;
+}
+const PortfolioItem = ({ imgSrc, url, name, category }: ProjectItemProps) => {
+  return (
+    <li
+      className="project-item  active"
+      data-filter-item
+      data-category="web development"
+    >
+      <Link href={url ? url : "/portfolio/#"}>
+        <figure className="project-img">
+          <div className="project-item-icon-box">
+            <IoEyeOutline height={3} width={3} />
+          </div>
+          <Image
+            src={imgSrc ? imgSrc : "/images/stock/project-1.jpg"}
+            width={300}
+            height={300}
+            alt={name}
+            loading="lazy"
+          />
+        </figure>
+        <h3 className="project-title">{name}</h3>
+        <p className="project-category">{category}</p>
+      </Link>
+    </li>
+  );
+};
 
 const Page = () => {
   return (
@@ -51,204 +86,12 @@ const Page = () => {
           </ul>
         </div>
         <ul className="project-list">
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  {/* <ion-icon name="eye-outline"></ion-icon> */}
-                </div>
-                <Image
-                  src="/images/stock/project-1.jpg"
-                  width={300}
-                  height={300}
-                  alt="finance"
-                  loading="lazy"
-                />
-              </figure>
-              <h3 className="project-title">Finance</h3>
-              <p className="project-category">Web development</p>
-            </a>
-          </li>
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  {/* <ion-icon name="eye-outline"></ion-icon> */}
-                </div>
-                <Image
-                  src="/images/stock/project-2.png"
-                  width={300}
-                  height={300}
-                  alt="orizon"
-                  loading="lazy"
-                />
-              </figure>
-              <h3 className="project-title">Orizon</h3>
-              <p className="project-category">Web development</p>
-            </a>
-          </li>
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  {/* <ion-icon name="eye-outline"></ion-icon> */}
-                </div>
-                <Image
-                  src="/images/stock/project-3.jpg"
-                  width={300}
-                  height={300}
-                  alt="fundo"
-                  loading="lazy"
-                />
-              </figure>
-              <h3 className="project-title">Fundo</h3>
-              <p className="project-category">Web design</p>
-            </a>
-          </li>
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="applications"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  {/* <ion-icon name="eye-outline"></ion-icon> */}
-                </div>
-                <Image
-                  src="/images/stock/project-4.png"
-                  width={300}
-                  height={300}
-                  alt="brawlhalla"
-                  loading="lazy"
-                />
-              </figure>
-              <h3 className="project-title">Brawlhalla</h3>
-              <p className="project-category">Applications</p>
-            </a>
-          </li>
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  {/* <ion-icon name="eye-outline"></ion-icon> */}
-                </div>
-                <Image
-                  src="/images/stock/project-5.png"
-                  width={300}
-                  height={300}
-                  alt="dsm."
-                  loading="lazy"
-                />
-              </figure>
-              <h3 className="project-title">DSM.</h3>
-              <p className="project-category">Web design</p>
-            </a>
-          </li>
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  {/* <ion-icon name="eye-outline"></ion-icon> */}
-                </div>
-                <Image
-                  src="/images/stock/project-6.png"
-                  width={300}
-                  height={300}
-                  alt="metaspark"
-                  loading="lazy"
-                />
-              </figure>
-              <h3 className="project-title">MetaSpark</h3>
-              <p className="project-category">Web design</p>
-            </a>
-          </li>
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  {/* <ion-icon name="eye-outline"></ion-icon> */}
-                </div>
-                <Image
-                  src="/images/stock/project-7.png"
-                  width={300}
-                  height={300}
-                  alt="summary"
-                  loading="lazy"
-                />
-              </figure>
-              <h3 className="project-title">Summary</h3>
-              <p className="project-category">Web development</p>
-            </a>
-          </li>
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="applications"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  {/* <ion-icon name="eye-outline"></ion-icon> */}
-                </div>
-                <Image
-                  src="/images/stock/project-8.jpg"
-                  width={300}
-                  height={300}
-                  alt="task manager"
-                  loading="lazy"
-                />
-              </figure>
-              <h3 className="project-title">Task Manager</h3>
-              <p className="project-category">Applications</p>
-            </a>
-          </li>
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  {/* <ion-icon name="eye-outline"></ion-icon> */}
-                </div>
-                <Image
-                  src="/images/stock/project-9.png"
-                  width={300}
-                  height={300}
-                  alt="arrival"
-                  loading="lazy"
-                />
-              </figure>
-              <h3 className="project-title">Arrival</h3>
-              <p className="project-category">Web development</p>
-            </a>
-          </li>
+          <PortfolioItem name="Finance" category="Web development" />
+          <PortfolioItem
+            name="Finance"
+            category="Web development"
+            imgSrc="/images/stock/project-2.png"
+          />
         </ul>
       </section>
     </article>
