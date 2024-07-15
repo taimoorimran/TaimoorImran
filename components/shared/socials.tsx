@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
@@ -9,9 +10,9 @@ interface SocialItemProps {
 const SocialItem = ({ link, children }: SocialItemProps) => {
   return (
     <li className="social-item">
-      <a href={link} className="social-link">
+      <Link href={link} className="social-link">
         {children}
-      </a>
+      </Link>
     </li>
   );
 };

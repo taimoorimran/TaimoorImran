@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const BlogItems = () => {
   return (
     <section className="blog-posts">
       <ul className="blog-posts-list">
         <li className="blog-post-item">
-          <a href="#">
+          <Link href="#">
             <figure className="blog-banner-box">
               <Image
                 src="/images/stock/blog-1.jpg"
@@ -27,7 +28,7 @@ const BlogItems = () => {
                 explicabo.
               </p>
             </div>
-          </a>
+          </Link>
         </li>
       </ul>
     </section>
