@@ -1,4 +1,6 @@
-import { MdOutlineMenuBook, MdOutlineWorkHistory } from "react-icons/md";
+import Education from "@/components/resume/education";
+import Experience from "@/components/resume/experience";
+import Skills from "@/components/resume/skills";
 
 const Page = () => {
   return (
@@ -6,6 +8,9 @@ const Page = () => {
       <header>
         <h2 className="h2 article-title">Resume</h2>
       </header>
+      <Education />
+      <Experience />
+      <Skills />
     </article>
   );
 };
