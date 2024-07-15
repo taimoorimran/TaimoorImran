@@ -1,3 +1,4 @@
+import React from "react";
 import { developerMeta } from "@/lib/constants";
 import {
   CalendarRange,
@@ -7,7 +8,6 @@ import {
   Smartphone,
 } from "lucide-react";
 import Image from "next/image";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { ThemeToggle } from "./theme-toggle";
 import Socials from "./shared/socials";
 
