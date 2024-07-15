@@ -48,7 +48,7 @@ const SocialItem = ({ link, children }: SocialItemProps) => {
 };
 const Sidebar = () => {
   return (
-    <aside className="sidebar">
+    <aside className="sidebar bg-eerie-white-2 dark:bg-eerie-black-2">
       <div className="sidebar-info">
         <figure className="avatar-box">
           <Image
