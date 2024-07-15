@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { ThemeToggle } from "./theme-toggle";
 
 interface ContactItemProps {
   children: React.ReactNode;
@@ -47,7 +48,7 @@ const SocialItem = ({ link, children }: SocialItemProps) => {
 };
 const Sidebar = () => {
   return (
-    <aside className="sidebar" data-sidebar>
+    <aside className="sidebar">
       <div className="sidebar-info">
         <figure className="avatar-box">
           <Image
@@ -55,14 +56,14 @@ const Sidebar = () => {
             alt="Taimoor Imran"
             width="180"
             height="180"
-            className="hidden md:block"
+            className="hidden md:dark:block"
           />
           <Image
             src="/images/taimoor-avatar-wave-light.png"
             alt="Taimoor Imran"
             width="180"
             height="180"
-            className="hidden md:block"
+            className="hidden md:block md:dark:hidden"
           />
           <Image
             src="/images/taimoor-avatar-face.png"
@@ -77,8 +78,9 @@ const Sidebar = () => {
             {developerMeta.name}
           </h1>
           <p className="title">Software Engineer</p>
+          <ThemeToggle />
         </div>
-        <button className="info_more-btn" data-sidebar-btn>
+        <button className="info_more-btn">
           <span>Show Contacts</span>
           <ChevronDown className="size-4" />
         </button>
