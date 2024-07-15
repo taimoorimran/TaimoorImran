@@ -5,7 +5,7 @@ import Socials from "@/components/shared/socials";
 const Page = () => {
   return (
     <article
-      className="contact active bg-eerie-white-2 dark:bg-eerie-black-2"
+      className="contact bg-eerie-white-2 dark:bg-eerie-black-2"
       data-page="contact"
     >
       <header>

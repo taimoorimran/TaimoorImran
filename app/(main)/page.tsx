@@ -5,7 +5,7 @@ import Work from "@/components/about/work";
 
 const Page = () => {
   return (
-    <article className="about active bg-eerie-white-2 dark:bg-eerie-black-2">
+    <article className="about bg-eerie-white-2 dark:bg-eerie-black-2">
       <header>
         <h2 className="h2 article-title">About me</h2>
       </header>

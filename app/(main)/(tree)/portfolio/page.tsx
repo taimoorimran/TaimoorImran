@@ -3,7 +3,7 @@ import Image from "next/image";
 const Page = () => {
   return (
     <article
-      className="portfolio active bg-eerie-white-2 dark:bg-eerie-black-2"
+      className="portfolio bg-eerie-white-2 dark:bg-eerie-black-2"
       data-page="portfolio"
     >
       <header>
