@@ -100,6 +100,11 @@ const Sidebar = () => {
         <div className="separator"></div>
         <Socials />
       </div>
+
+      <div className="mt-3 flex items-center justify-center">
+        <p className="text-sm p-1">Theme:</p>
+        <ThemeToggle />
+      </div>
     </aside>
   );
 };
