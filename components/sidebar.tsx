@@ -64,8 +64,10 @@ const Sidebar = () => {
           <h1 className="name" title="Taimoor Imran">
             {developerMeta.name}
           </h1>
-          <p className="title">Software Engineer</p>
-          <ThemeToggle />
+          <div className="flex">
+            <p className="title">Software Engineer</p>
+            <ThemeToggle />
+          </div>
         </div>
         <button className="info_more-btn">
           <span>Show Contacts</span>
