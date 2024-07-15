@@ -9,6 +9,7 @@ import {
 import Image from "next/image";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { ThemeToggle } from "./theme-toggle";
+import Socials from "./shared/socials";
 
 interface ContactItemProps {
   children: React.ReactNode;
@@ -32,20 +33,6 @@ const ContactItem = ({ children, title, link, text }: ContactItemProps) => (
   </li>
 );
 
-interface SocialItemProps {
-  children: React.ReactNode;
-  link: string;
-}
-
-const SocialItem = ({ link, children }: SocialItemProps) => {
-  return (
-    <li className="social-item">
-      <a href={link} className="social-link">
-        {children}
-      </a>
-    </li>
-  );
-};
 const Sidebar = () => {
   return (
     <aside className="sidebar bg-eerie-white-2 dark:bg-eerie-black-2">
@@ -102,17 +89,7 @@ const Sidebar = () => {
           </ContactItem>
         </ul>
         <div className="separator"></div>
-        <ul className="social-list">
-          <SocialItem link="#">
-            <FaGithub className="size-4" />
-          </SocialItem>
-          <SocialItem link="#">
-            <FaLinkedin className="size-4" />
-          </SocialItem>
-          <SocialItem link="#">
-            <FaInstagram className="size-4" />
-          </SocialItem>
-        </ul>
+        <Socials />
       </div>
     </aside>
   );
