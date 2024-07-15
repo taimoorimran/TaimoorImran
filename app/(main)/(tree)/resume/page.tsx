@@ -1,3 +1,5 @@
+import { MdOutlineMenuBook, MdOutlineWorkHistory } from "react-icons/md";
+
 const Page = () => {
   return (
     <article
@@ -10,7 +12,7 @@ const Page = () => {
       <section className="timeline">
         <div className="title-wrapper">
           <div className="icon-box">
-            {/* <ion-icon name="book-outline"></ion-icon> */}
+            <MdOutlineMenuBook className="size-5" />
           </div>
           <h3 className="h3">Education</h3>
         </div>
@@ -48,7 +50,7 @@ const Page = () => {
       <section className="timeline">
         <div className="title-wrapper">
           <div className="icon-box">
-            {/* <ion-icon name="book-outline"></ion-icon> */}
+            <MdOutlineWorkHistory className="size-5" />
           </div>
           <h3 className="h3">Experience</h3>
         </div>
