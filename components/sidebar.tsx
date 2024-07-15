@@ -10,6 +10,7 @@ import {
 import Image from "next/image";
 import { ThemeToggle } from "./theme-toggle";
 import Socials from "./shared/socials";
+import Link from "next/link";
 
 interface ContactItemProps {
   children: React.ReactNode;
@@ -23,9 +24,9 @@ const ContactItem = ({ children, title, link, text }: ContactItemProps) => (
     <div className="contact-info text-white">
       <p className="contact-title">{title}</p>
       {link ? (
-        <a href={link} className="contact-link">
+        <Link href={link} className="contact-link">
           {text}
-        </a>
+        </Link>
       ) : (
         <p className="contact-link">{text}</p>
       )}
@@ -64,10 +65,8 @@ const Sidebar = () => {
           <h1 className="name" title="Taimoor Imran">
             {developerMeta.name}
           </h1>
-          <div className="flex">
-            <p className="title">Software Engineer</p>
-            <ThemeToggle />
-          </div>
+          <p className="title">{developerMeta.designation}</p>
+          <p className="sub-title">{developerMeta.designationSubTitle}</p>
         </div>
         <button className="info_more-btn">
           <span>Show Contacts</span>
@@ -77,16 +76,24 @@ const Sidebar = () => {
       <div className="sidebar-info_more">
         <div className="separator"></div>
         <ul className="contacts-list">
-          <ContactItem title="Email" text="s@gmail.com">
+          <ContactItem
+            title="Email"
+            text={developerMeta.email}
+            link={`emailto:${developerMeta.email}`}
+          >
             <Mail className="size-4" />
           </ContactItem>
-          <ContactItem title="Phone" text="+2222">
+          <ContactItem
+            title="Phone"
+            text={developerMeta.mobile}
+            link={`tel:${developerMeta.mobile}`}
+          >
             <Smartphone className="size-4" />
           </ContactItem>
-          <ContactItem title="Birthday" text="Jan 01, 1995">
+          <ContactItem title="Birthday" text={developerMeta.dobDisplay}>
             <CalendarRange className="size-4" />
           </ContactItem>
-          <ContactItem title="Location" text="Karachi, Sindh, Pakistan 🇵🇰">
+          <ContactItem title="Location" text={developerMeta.location}>
             <MapPin className="size-4" />
           </ContactItem>
         </ul>
