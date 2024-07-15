@@ -18,6 +18,10 @@ const config = {
         "2xl": "1400px",
       },
     },
+    colors: {
+      'smoky-dark': `var(--smoky-black)`,
+      'smoky-light': `var(--smoky-white)`,
+    },
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],

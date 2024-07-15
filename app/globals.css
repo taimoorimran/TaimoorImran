@@ -120,6 +120,7 @@
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
   --smoky-black: hsl(0, 0%, 7%);
+  --smoky-white: hsl(0, 32%, 75%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --orange-yellow-crayola: hsl(45, 100%, 72%);
@@ -232,9 +233,12 @@ html {
   font-family: var(--ff-poppins);
 }
 
-body {
-  background: var(--smoky-black);
-}
+/* body {
+  background: var(--smoky-white);
+  @media (prefers-color-scheme: dark) {
+    background: var(--smoky-black);
+  }
+} */
 
 
 

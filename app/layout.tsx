@@ -3,12 +3,14 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { developerMeta } from "@/lib/constants";
+import { ThemeProvider } from "@/components/theme-provider";
+import { cn } from "@/lib/utils";
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-poppins',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -43,11 +45,18 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/icons/site.webmanifest" />
       </head>
-      <body
-        className={poppins.className}
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
       >
-        {children}
-      </body>
+        <body
+          className={cn("bg-smoky-light dark:bg-smoky-dark", poppins.className)}
+        >
+          {children}
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
