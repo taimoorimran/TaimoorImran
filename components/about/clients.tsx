@@ -19,7 +19,7 @@ const ClientItem = ({ imgSrc, link }: ClientItemProps) => {
   );
 };
 const Clients = () => {
-  const clientItems = [{}, {}, {}, {}, {}, {}];
+  const clientItems: ClientItemProps[] = [{}, {}, {}, {}, {}, {}];
   return (
     <section className="clients">
       <h3 className="h3 clients-title">Clients</h3>
