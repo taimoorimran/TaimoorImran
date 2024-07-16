@@ -2,10 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { developerMeta } from "@/lib/constants";
-interface SocialItemProps {
-  children: React.ReactNode;
-  link: string;
-}
+import { SocialItemProps } from "@/lib/interfaces";
 
 const SocialItem = ({ link, children }: SocialItemProps) => {
   return (

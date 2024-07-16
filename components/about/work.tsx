@@ -1,10 +1,6 @@
+import { WorkItemProps } from "@/lib/interfaces";
 import Image from "next/image";
 
-interface WorkItemProps {
-  imgSrc?: string;
-  title: string;
-  description: string;
-}
 const WorkItem = ({ imgSrc, title, description }: WorkItemProps) => {
   return (
     <li className="service-item">

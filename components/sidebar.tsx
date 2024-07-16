@@ -11,13 +11,8 @@ import Image from "next/image";
 import { ThemeToggle } from "./theme-toggle";
 import Socials from "./shared/socials";
 import Link from "next/link";
+import { ContactItemProps } from "@/lib/interfaces";
 
-interface ContactItemProps {
-  children: React.ReactNode;
-  title: string;
-  link?: string;
-  text: string;
-}
 const ContactItem = ({ children, title, link, text }: ContactItemProps) => (
   <li className="contact-item">
     <div className="icon-box">{children}</div>

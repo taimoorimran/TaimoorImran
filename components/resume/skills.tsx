@@ -1,9 +1,5 @@
 import { Progress } from "@/components/ui/progress";
-
-interface SkillItemProps {
-  name: string;
-  score: number;
-}
+import { SkillItemProps } from "@/lib/interfaces";
 
 const SkillItem = ({ name, score }: SkillItemProps) => {
   return (

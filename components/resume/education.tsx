@@ -1,12 +1,5 @@
+import { EducationItemProps } from "@/lib/interfaces";
 import { MdOutlineMenuBook } from "react-icons/md";
-
-interface EducationItemProps {
-  institute: string;
-  education: string;
-  startDate: string | number;
-  endDate: string | number;
-  description?: string[];
-}
 
 const EducationItem = ({
   institute,

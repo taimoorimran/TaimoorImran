@@ -1,13 +1,5 @@
+import { ExperienceItemProps } from "@/lib/interfaces";
 import { MdOutlineWorkHistory } from "react-icons/md";
-
-interface ExperienceItemProps {
-  company: string;
-  designation: string;
-  startDate: string | number;
-  endDate: string | number;
-  description?: string[];
-  skills?: string[];
-}
 
 const ExperienceItem = ({
   company,

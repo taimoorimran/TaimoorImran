@@ -1,9 +1,7 @@
+import { ClientItemProps } from "@/lib/interfaces";
 import Image from "next/image";
 import Link from "next/link";
-interface ClientItemProps {
-  imgSrc?: string;
-  link?: string;
-}
+
 const ClientItem = ({ imgSrc, link }: ClientItemProps) => {
   return (
     <li className="clients-item">
