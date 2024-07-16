@@ -1,6 +1,40 @@
 import { MdOutlineMenuBook } from "react-icons/md";
 
+interface EducationItemProps {
+  institute: string;
+  education: string;
+  startDate: string | number;
+  endDate: string | number;
+  description?: string;
+}
+
+const EducationItem = ({
+  institute,
+  education,
+  startDate,
+  endDate,
+  description,
+}: EducationItemProps) => {
+  return (
+    <li className="timeline-item">
+      <h3 className="text-lg font-semibold">{institute}</h3>
+      <h4 className="h4 timeline-item-title">{education}</h4>
+      <span>
+        {startDate} — {endDate}
+      </span>
+      {description && <p className="timeline-text">{description}</p>}
+    </li>
+  );
+};
 const Education = () => {
+  const educationItems: EducationItemProps[] = [
+    {
+      institute: "Iqra University",
+      startDate: "June 2014",
+      endDate: "August 2018",
+      education: "Bachelors of Computer Sciences",
+    },
+  ];
   return (
     <section className="timeline">
       <div className="title-wrapper">
@@ -10,34 +44,29 @@ const Education = () => {
         <h3 className="h3">Education</h3>
       </div>
       <ol className="timeline-list">
-        <li className="timeline-item">
-          <h4 className="h4 timeline-item-title">
-            University school of the arts
-          </h4>
-          <span>2007 — 2008</span>
-          <p className="timeline-text">
-            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit
-            atque corrupti, quos dolores et quas molestias exceptur.
-          </p>
-        </li>
-        <li className="timeline-item">
-          <h4 className="h4 timeline-item-title">New york academy of art</h4>
-          <span>2006 — 2007</span>
-          <p className="timeline-text">
-            Ratione voluptatem sequi nesciunt, facere quisquams facere menda
-            ossimus, omnis voluptas assumenda est omnis..
-          </p>
-        </li>
-        <li className="timeline-item">
-          <h4 className="h4 timeline-item-title">
-            High school of art and design
-          </h4>
-          <span>2002 — 2004</span>
-          <p className="timeline-text">
-            Duis aute irure dolor in reprehenderit in voluptate, quila voluptas
-            mag odit aut fugit, sed consequuntur magni dolores eos.
-          </p>
-        </li>
+        {educationItems.map(
+          (
+            {
+              institute,
+              education,
+              startDate,
+              endDate,
+              description,
+            }: EducationItemProps,
+            key
+          ) => {
+            return (
+              <EducationItem
+                key={`item_${institute}_${key}`}
+                institute={institute}
+                startDate={startDate}
+                endDate={endDate}
+                education={education}
+                description={description}
+              />
+            );
+          }
+        )}
       </ol>
     </section>
   );
