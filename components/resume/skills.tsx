@@ -1,3 +1,5 @@
+import { Progress } from "@/components/ui/progress";
+
 interface SkillItemProps {
   name: string;
   score: number;
@@ -8,10 +10,9 @@ const SkillItem = ({ name, score }: SkillItemProps) => {
     <li className="skills-item">
       <div className="title-wrapper">
         <h5 className="h5">{name}</h5>
-        <data value={score}>{score}%</data>
       </div>
       <div className="skill-progress-bg">
-        <div className="skill-progress-fill"></div>
+        <Progress value={score} />
       </div>
     </li>
   );

@@ -35,6 +35,7 @@ const config = {
       "bittersweet-shimmer": `var(--bittersweet-shimmer)`,
       "smoky-dark": `var(--smoky-black)`,
       "smoky-light": `var(--smoky-white)`,
+      "text-gradient-yellow": `var(--text-gradient-yellow)`
     },
     extend: {
       fontFamily: {
