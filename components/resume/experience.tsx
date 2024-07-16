@@ -1,6 +1,76 @@
 import { MdOutlineWorkHistory } from "react-icons/md";
 
+interface ExperienceItemProps {
+  company: string;
+  designation: string;
+  startDate: string | number;
+  endDate: string | number;
+  description?: string[];
+  skills?: string[];
+}
+
+const ExperienceItem = ({
+  company,
+  designation,
+  startDate,
+  endDate,
+  description,
+  skills,
+}: ExperienceItemProps) => {
+  return (
+    <li className="timeline-item">
+      <h3 className="text-lg font-semibold">{company}</h3>
+      <h4 className="h4 timeline-item-title">{designation}</h4>
+      <span>
+        {startDate} — {endDate}
+      </span>
+      {description &&
+        description.map((desc: string, key) => {
+          return (
+            <p key={`desc_${key}_${company}`} className="timeline-text">
+              {desc}
+            </p>
+          );
+        })}
+      {skills &&
+        skills.map((skill: string, key) => {
+          return (
+            <p key={`skill_${key}_${company}`} className="timeline-text">
+              {skill}
+            </p>
+          );
+        })}
+    </li>
+  );
+};
+
 const Experience = () => {
+  const experienceItems: ExperienceItemProps[] = [
+    {
+      company: "Center of Non-Communicable Diseases",
+      startDate: "July 2023",
+      endDate: "Present",
+      designation: "Project Manager - Technology & Innovation Dept.",
+      skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB"],
+      description: [],
+    },
+    {
+      company: "Tech Surge Pvt. Ltd.",
+      startDate: "August 2022",
+      endDate: "September 2023",
+      designation: "Senior React Developer",
+      description: [
+        "Technology Migration: Refactored a leading real estate management system from Visual FoxPro to ReactJS, Redux, and the Helix-design system, resulting in a 30% improvement in system efficiency and user experience.",
+        "Client Coordination: Communicated with clients in the US and Canada, ensuring seamless communication and collaboration, which led to a 95% client satisfaction rate.",
+        "Project Management: Conducted thorough requirements gathering, created detailed project schedules, and ensured timely project completion, consistently meeting deadlines and client expectations.",
+        "Team Collaboration: Worked closely with cross-functional teams to integrate new features and enhance existing functionalities, leveraging tools like Jira for task management.",
+        "Performance Optimization: Implemented best practices in code optimization and performance tuning, significantly reducing page load times and increasing application responsiveness.",
+        "Version Control and CI/CD: Utilized Git for version control and integrated CI/CD pipelines to streamline development processes and ensure continuous delivery.",
+      ],
+      skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB"],
+    },
+  ];
+
   return (
     <section className="timeline">
       <div className="title-wrapper">
@@ -10,30 +80,31 @@ const Experience = () => {
         <h3 className="h3">Experience</h3>
       </div>
       <ol className="timeline-list">
-        <li className="timeline-item">
-          <h4 className="h4 timeline-item-title">Creative director</h4>
-          <span>2015 — Present</span>
-          <p className="timeline-text">
-            Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit
-            atque corrupti, quos dolores et qvuas molestias exceptur.
-          </p>
-        </li>
-        <li className="timeline-item">
-          <h4 className="h4 timeline-item-title">Art director</h4>
-          <span>2013 — 2015</span>
-          <p className="timeline-text">
-            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit
-            atque corrupti, quos dolores et quas molestias exceptur.
-          </p>
-        </li>
-        <li className="timeline-item">
-          <h4 className="h4 timeline-item-title">Web designer</h4>
-          <span>2010 — 2013</span>
-          <p className="timeline-text">
-            Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit
-            atque corrupti, quos dolores et quas molestias exceptur.
-          </p>
-        </li>
+        {experienceItems.map(
+          (
+            {
+              company,
+              designation,
+              startDate,
+              endDate,
+              description,
+              skills,
+            }: ExperienceItemProps,
+            key
+          ) => {
+            return (
+              <ExperienceItem
+                key={`item_${company}_${key}`}
+                company={company}
+                startDate={startDate}
+                endDate={endDate}
+                designation={designation}
+                description={description}
+                skills={skills}
+              />
+            );
+          }
+        )}
       </ol>
     </section>
   );
