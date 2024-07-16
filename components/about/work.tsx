@@ -11,7 +11,7 @@ const WorkItem = ({ imgSrc, title, description }: WorkItemProps) => {
       <div className="service-icon-box">
         <Image
           src={imgSrc ? imgSrc : "/images/stock/icon-design.svg"}
-          alt="design icon"
+          alt={`${title} icon`}
           width="70"
           height="60"
         />
