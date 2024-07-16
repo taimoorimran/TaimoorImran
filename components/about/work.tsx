@@ -24,7 +24,7 @@ const WorkItem = ({ imgSrc, title, description }: WorkItemProps) => {
   );
 };
 const Work = () => {
-  const workItems = [
+  const workItems: WorkItemProps[] = [
     {
       title: "Web Design",
       description:
