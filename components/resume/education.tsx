@@ -5,7 +5,7 @@ interface EducationItemProps {
   education: string;
   startDate: string | number;
   endDate: string | number;
-  description?: string;
+  description?: string[];
 }
 
 const EducationItem = ({
@@ -22,7 +22,14 @@ const EducationItem = ({
       <span>
         {startDate} — {endDate}
       </span>
-      {description && <p className="timeline-text">{description}</p>}
+      {description &&
+        description.map((desc: string, key) => {
+          return (
+            <p key={`desc_${key}_${institute}`} className="timeline-text">
+              {desc}
+            </p>
+          );
+        })}
     </li>
   );
 };
@@ -33,6 +40,9 @@ const Education = () => {
       startDate: "June 2014",
       endDate: "August 2018",
       education: "Bachelors of Computer Sciences",
+      description: [
+        "Received full scholarship from Ignite Pakistan for Final Year Project",
+      ],
     },
   ];
   return (
