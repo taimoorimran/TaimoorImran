@@ -56,7 +56,7 @@ const Education = () => {
               endDate,
               description,
             }: EducationItemProps,
-            key
+            key,
           ) => {
             return (
               <EducationItem
@@ -68,7 +68,7 @@ const Education = () => {
                 description={description}
               />
             );
-          }
+          },
         )}
       </ol>
     </section>

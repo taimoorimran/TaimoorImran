@@ -30,7 +30,7 @@ const Page = () => {
           {projectItems.map(
             (
               { name, category, imgSrc, description }: ProjectItemProps,
-              key
+              key,
             ) => {
               return (
                 <PortfolioItem
@@ -41,7 +41,7 @@ const Page = () => {
                   description={description}
                 />
               );
-            }
+            },
           )}
         </ul>
       </section>

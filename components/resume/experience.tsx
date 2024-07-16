@@ -82,7 +82,7 @@ const Experience = () => {
               description,
               skills,
             }: ExperienceItemProps,
-            key
+            key,
           ) => {
             return (
               <ExperienceItem
@@ -95,7 +95,7 @@ const Experience = () => {
                 skills={skills}
               />
             );
-          }
+          },
         )}
       </ol>
     </section>

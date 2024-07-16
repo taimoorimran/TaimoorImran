@@ -1,7 +1,8 @@
 export const developerMeta = {
   name: "Taimoor Imran",
   designation: "Software Engineer",
-  designationSubTitle: "Senior Frontend Engineer | Next.js, React, TypeScript Expert | 7+ Years in Web Development | UI/UX Specialist | Vercel, GCP | CI/CD, Tailwind CSS, ShadCN Design System",
+  designationSubTitle:
+    "Senior Frontend Engineer | Next.js, React, TypeScript Expert | 7+ Years in Web Development | UI/UX Specialist | Vercel, GCP | CI/CD, Tailwind CSS, ShadCN Design System",
   email: "taimoorimran9@gmail.com",
   mobile: "+92331022301",
   dob: "",
@@ -10,6 +11,6 @@ export const developerMeta = {
   socials: {
     github: "https://github.com/taimoorimran",
     linkedin: "https://www.linkedin.com/in/taimoor-imran-b9745ba7/",
-    instagram: "https://www.instagram.com/taimoorimrandev/"
-  }
+    instagram: "https://www.instagram.com/taimoorimrandev/",
+  },
 };

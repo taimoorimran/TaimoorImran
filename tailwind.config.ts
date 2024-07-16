@@ -19,8 +19,8 @@ const config = {
       },
     },
     colors: {
-      "jet": `var(--jet)`,
-      "onyx": `var(--onyx)`,
+      jet: `var(--jet)`,
+      onyx: `var(--onyx)`,
       "light-onyx": `var(--light-onyx)`,
       "eerie-black-1": `var(--eerie-black-1)`,
       "eerie-black-2": `var(--eerie-black-2)`,
@@ -35,7 +35,7 @@ const config = {
       "bittersweet-shimmer": `var(--bittersweet-shimmer)`,
       "smoky-dark": `var(--smoky-black)`,
       "smoky-light": `var(--smoky-white)`,
-      "text-gradient-yellow": `var(--text-gradient-yellow)`
+      "text-gradient-yellow": `var(--text-gradient-yellow)`,
     },
     extend: {
       fontFamily: {
