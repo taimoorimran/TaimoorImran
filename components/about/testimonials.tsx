@@ -11,7 +11,7 @@ const TestimonialModal = () => {
         <div className="modal-img-wrapper">
           <figure className="modal-avatar-box">
             <Image
-              src="/images/stock/taimoor-avatar.png"
+              src="/images/stock/avatar-1.png"
               alt="Daniel lewis"
               width="80"
               height="80"

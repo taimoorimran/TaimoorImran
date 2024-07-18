@@ -1,5 +1,6 @@
 import { ExperienceItemProps } from "@/lib/interfaces";
 import { MdOutlineWorkHistory } from "react-icons/md";
+import { Badge } from "@/components/ui/badge";
 
 const ExperienceItem = ({
   company,
@@ -27,9 +28,9 @@ const ExperienceItem = ({
       {skills &&
         skills.map((skill: string, key) => {
           return (
-            <p key={`skill_${key}_${company}`} className="timeline-text">
+            <Badge key={`skill_${key}_${company}`} variant="default">
               {skill}
-            </p>
+            </Badge>
           );
         })}
     </li>
@@ -82,7 +83,7 @@ const Experience = () => {
               description,
               skills,
             }: ExperienceItemProps,
-            key,
+            key
           ) => {
             return (
               <ExperienceItem
@@ -95,7 +96,7 @@ const Experience = () => {
                 skills={skills}
               />
             );
-          },
+          }
         )}
       </ol>
     </section>
