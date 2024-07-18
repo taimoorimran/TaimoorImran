@@ -81,6 +81,35 @@ const Experience = () => {
       ],
       skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB"],
     },
+    {
+      company: "7CTECH",
+      startDate: "July 2020",
+      endDate: "April 2021",
+      designation: "React Developer",
+      description: [
+        "System Modernization: Transitioned a major retirement analysis platform from embedded JavaScript to React, enhancing performance and user experience. Integrated SASS for consistent design implementation and Redis for effective caching.",
+        "Client Engagement: Maintained consistent communication with US-based clients through daily scrum meetings, leading to a 95% client satisfaction rate.",
+        "Project Coordination: Led thorough requirements gathering, developed detailed project timelines, and ensured on-time project delivery, meeting or exceeding client expectations.",
+        "Performance Enhancement: Applied advanced code optimization techniques, resulting in a 45% reduction in page load times and improved application responsiveness.",
+        "Continuous Integration and Delivery: Managed version control using Git and established CI/CD pipelines, streamlining development processes and ensuring continuous delivery.",
+      ],
+      skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB"],
+    },
+    {
+      company: "Markematics (Pvt.) Ltd. ",
+      startDate: "March 2019",
+      endDate: "July 2020",
+      designation: "Team Lead / Assistant Manager - Technology & Innovation",
+      description: [
+        "Survey Process Digitization: Transformed FMCG surveys from paper-based methods to dynamic JavaScript forms, significantly improving data accuracy and reducing data compromise.",
+        "Efficiency Enhancement: Streamlined the survey process, reducing completion time from one month to less than half an hour by automating data synchronization and QA processes using React Native and SurveyJS.",
+        "Data Management: Enabled real-time data syncing and dashboarding with accurate geo-tagging and audio recordings, leveraging local storage on Android tablets and synchronization at the end of each day.",
+        "Client Collaboration: Gathered requirements from the client servicing team and ensured effective communication and task delegation to a team of 2 developers and 1 data analyst.",
+        "Innovation During COVID-19: Launched online surveys for public research during the pandemic, opening new dimensions of data collection and analysis for clients.",
+        "Technical Leadership: Led the development and implementation of the survey system using React Native, Lodash, and SurveyJS, while maintaining robust project management practices.",
+      ],
+      skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB"],
+    },
   ];
 
   return (
