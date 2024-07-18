@@ -14,8 +14,8 @@ const ExperienceItem = ({
 }: ExperienceItemProps) => {
   return (
     <li className="timeline-item">
-      <h3 className="text-lg font-semibold">{company}</h3>
-      <h4 className="h4 timeline-item-title">{designation}</h4>
+      <h3 className="text-lg font-semibold">{designation}</h3>
+      <h4 className="h4 timeline-item-title">{company}</h4>
       <span>
         {startDate} — {endDate}
       </span>
