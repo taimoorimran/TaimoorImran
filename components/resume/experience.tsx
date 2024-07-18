@@ -1,6 +1,7 @@
 import { ExperienceItemProps } from "@/lib/interfaces";
 import { MdOutlineWorkHistory } from "react-icons/md";
 import { Badge } from "@/components/ui/badge";
+import { getFormattedText } from "@/lib/utils";
 
 const ExperienceItem = ({
   company,
@@ -20,9 +21,11 @@ const ExperienceItem = ({
       {description &&
         description.map((desc: string, key) => {
           return (
-            <p key={`desc_${key}_${company}`} className="timeline-text">
-              {desc}
-            </p>
+            <p
+              key={`desc_${key}_${company}`}
+              className="timeline-text"
+              dangerouslySetInnerHTML={{ __html: getFormattedText(desc) }}
+            ></p>
           );
         })}
       {skills &&
