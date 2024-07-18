@@ -1,7 +1,8 @@
 import { ExperienceItemProps } from "@/lib/interfaces";
 import { MdOutlineWorkHistory } from "react-icons/md";
 import { Badge } from "@/components/ui/badge";
-import { getFormattedText } from "@/lib/utils";
+// import { getFormattedText } from "@/lib/utils";
+import FormattedDescription from "@/components/shared/formatted-description";
 
 const ExperienceItem = ({
   company,
@@ -21,11 +22,7 @@ const ExperienceItem = ({
       {description &&
         description.map((desc: string, key) => {
           return (
-            <p
-              key={`desc_${key}_${company}`}
-              className="timeline-text"
-              dangerouslySetInnerHTML={{ __html: getFormattedText(desc) }}
-            ></p>
+            <FormattedDescription key={`desc_${key}_${company}`} desc={desc} />
           );
         })}
       {skills &&
@@ -51,7 +48,7 @@ const Experience = () => {
       description: [],
     },
     {
-      company: "Tech Surge Pvt. Ltd.",
+      company: "Tech Surge Inc.",
       startDate: "August 2022",
       endDate: "September 2023",
       designation: "Senior React Developer",
@@ -62,6 +59,20 @@ const Experience = () => {
         "Team Collaboration: Worked closely with cross-functional teams to integrate new features and enhance existing functionalities, leveraging tools like Jira for task management.",
         "Performance Optimization: Implemented best practices in code optimization and performance tuning, significantly reducing page load times and increasing application responsiveness.",
         "Version Control and CI/CD: Utilized Git for version control and integrated CI/CD pipelines to streamline development processes and ensure continuous delivery.",
+      ],
+      skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB"],
+    },
+    {
+      company: "ZEPCOM",
+      startDate: "June 2021",
+      endDate: "September 2022",
+      designation: "Senior React Developer",
+      description: [
+        "System Modernization: Transitioned a major retirement analysis platform from embedded JavaScript to React, enhancing performance and user experience. Integrated SASS for consistent design implementation and Redis for effective caching.",
+        "Client Engagement: Maintained consistent communication with US-based clients through daily scrum meetings, leading to a 95% client satisfaction rate.",
+        "Project Coordination: Led thorough requirements gathering, developed detailed project timelines, and ensured on-time project delivery, meeting or exceeding client expectations.",
+        "Performance Enhancement: Applied advanced code optimization techniques, resulting in a 45% reduction in page load times and improved application responsiveness.",
+        "Continuous Integration and Delivery: Managed version control using Git and established CI/CD pipelines, streamlining development processes and ensuring continuous delivery.",
       ],
       skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB"],
     },
