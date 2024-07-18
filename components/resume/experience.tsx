@@ -19,12 +19,17 @@ const ExperienceItem = ({
       <span>
         {startDate} — {endDate}
       </span>
-      {description &&
-        description.map((desc: string, key) => {
-          return (
-            <FormattedDescription key={`desc_${key}_${company}`} desc={desc} />
-          );
-        })}
+      <div className="m-2">
+        {description &&
+          description.map((desc: string, key) => {
+            return (
+              <FormattedDescription
+                key={`desc_${key}_${company}`}
+                desc={desc}
+              />
+            );
+          })}
+      </div>
       {skills &&
         skills.map((skill: string, key) => {
           return (

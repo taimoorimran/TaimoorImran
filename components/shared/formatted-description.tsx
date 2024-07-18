@@ -15,7 +15,7 @@ const FormattedDescription = ({ desc }: FormattedDescProps) => {
   }
   return (
     <p>
-      <span className="text-lg">{splittedText[0]}: </span>
+      <span className="text-sm">{splittedText[0]}: </span>
       {splittedText[1]}
     </p>
   );
