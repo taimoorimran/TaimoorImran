@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const TestimonialModal = () => {
   return (
-    <div className="modal-container" data-modal-container>
-      <div className="overlay" data-overlay></div>
+    <div className="modal-container">
+      <div className="overlay"></div>
       <section className="testimonials-modal">
-        <button className="modal-close-btn" data-modal-close-btn>
+        <button className="modal-close-btn">
           {/* <ion-icon name="close-outline"></ion-icon> */}
         </button>
         <div className="modal-img-wrapper">
@@ -15,7 +15,6 @@ const TestimonialModal = () => {
               alt="Daniel lewis"
               width="80"
               height="80"
-              data-modal-img
             />
           </figure>
           <Image
@@ -26,11 +25,11 @@ const TestimonialModal = () => {
           />
         </div>
         <div className="modal-content">
-          <h4 className="h3 modal-title" data-modal-title>
+          <h4 className="h3 modal-title">
             Daniel lewis
           </h4>
           <time defaultValue="2021-06-14">14 June, 2021</time>
-          <div data-modal-text>
+          <div>
             <p>
               Richard was hired to create a corporate identity. We were very
               pleased with the work done. She has a lot of experience and is
@@ -50,20 +49,19 @@ const Testimoniails = () => {
       <h3 className="h3 testimonials-title">Testimonials</h3>
       <ul className="testimonials-list has-scrollbar">
         <li className="testimonials-item">
-          <div className="content-card" data-testimonials-item>
+          <div className="content-card">
             <figure className="testimonials-avatar-box">
               <Image
                 src="/images/stock/avatar-1.png"
                 alt="Daniel lewis"
                 width="60"
                 height="80"
-                data-testimonials-avatar
               />
             </figure>
-            <h4 className="h4 testimonials-item-title" data-testimonials-title>
+            <h4 className="h4 testimonials-item-title">
               Daniel lewis
             </h4>
-            <div className="testimonials-text" data-testimonials-text>
+            <div className="testimonials-text">
               <p>
                 Richard was hired to create a corporate identity. We were very
                 pleased with the work done. She has a lot of experience and is
@@ -75,20 +73,19 @@ const Testimoniails = () => {
           </div>
         </li>
         <li className="testimonials-item">
-          <div className="content-card" data-testimonials-item>
+          <div className="content-card">
             <figure className="testimonials-avatar-box">
               <Image
                 src="/images/stock/avatar-2.png"
                 alt="Jessica miller"
                 width="60"
                 height="80"
-                data-testimonials-avatar
               />
             </figure>
-            <h4 className="h4 testimonials-item-title" data-testimonials-title>
+            <h4 className="h4 testimonials-item-title">
               Jessica miller
             </h4>
-            <div className="testimonials-text" data-testimonials-text>
+            <div className="testimonials-text">
               <p>
                 Richard was hired to create a corporate identity. We were very
                 pleased with the work done. She has a lot of experience and is
@@ -100,20 +97,19 @@ const Testimoniails = () => {
           </div>
         </li>
         <li className="testimonials-item">
-          <div className="content-card" data-testimonials-item>
+          <div className="content-card">
             <figure className="testimonials-avatar-box">
               <Image
                 src="/images/stock/avatar-3.png"
                 alt="Emily evans"
                 width="60"
                 height="80"
-                data-testimonials-avatar
               />
             </figure>
-            <h4 className="h4 testimonials-item-title" data-testimonials-title>
+            <h4 className="h4 testimonials-item-title">
               Emily evans
             </h4>
-            <div className="testimonials-text" data-testimonials-text>
+            <div className="testimonials-text">
               <p>
                 Richard was hired to create a corporate identity. We were very
                 pleased with the work done. She has a lot of experience and is
@@ -125,20 +121,19 @@ const Testimoniails = () => {
           </div>
         </li>
         <li className="testimonials-item">
-          <div className="content-card" data-testimonials-item>
+          <div className="content-card">
             <figure className="testimonials-avatar-box">
               <Image
                 src="/images/stock/avatar-4.png"
                 alt="Henry william"
                 width="60"
                 height="80"
-                data-testimonials-avatar
               />
             </figure>
-            <h4 className="h4 testimonials-item-title" data-testimonials-title>
+            <h4 className="h4 testimonials-item-title">
               Henry william
             </h4>
-            <div className="testimonials-text" data-testimonials-text>
+            <div className="testimonials-text">
               <p>
                 Richard was hired to create a corporate identity. We were very
                 pleased with the work done. She has a lot of experience and is

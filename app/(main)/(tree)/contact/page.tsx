@@ -6,7 +6,6 @@ const Page = () => {
   return (
     <article
       className="contact bg-eerie-white-2 dark:bg-eerie-black-2"
-      data-page="contact"
     >
       <header>
         <h2 className="h2 article-title">Contact</h2>

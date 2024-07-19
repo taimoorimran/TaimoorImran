@@ -20,7 +20,6 @@ const Page = () => {
   return (
     <article
       className="portfolio bg-eerie-white-2 dark:bg-eerie-black-2"
-      data-page="portfolio"
     >
       <header>
         <h2 className="h2 article-title">Portfolio</h2>
