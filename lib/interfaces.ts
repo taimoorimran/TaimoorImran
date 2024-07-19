@@ -51,3 +51,9 @@ export interface SkillItemProps {
   name: string;
   score: number;
 }
+
+export interface TestimonialItemProps {
+  name: string;
+  description: string;
+  imgSrc?: string;
+}
