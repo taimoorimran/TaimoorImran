@@ -1,3 +1,4 @@
+import { developerMeta } from "@/lib/constants";
 import { TestimonialItemProps } from "@/lib/interfaces";
 import Image from "next/image";
 import { IoCloseCircleOutline } from "react-icons/io5";
@@ -71,23 +72,8 @@ const TestimonialItem = ({ name, description, imgSrc }: TestimonialItemProps) =>
   );
 };
 
-const Testimoniails = () => {
-  const testimonialItems: TestimonialItemProps[] = [
-    {
-      name: "Shakeel Ahmed",
-      description: "Good"
-    },
-    {
-      name: "Daniel lewis",
-      description: "V. Good",
-      imgSrc: "/images/stock/avatar-2.png"
-    },
-    {
-      name: "Daniel lewis",
-      description: "V. V. Good",
-      imgSrc: "/images/stock/avatar-3.png"
-    }
-  ]
+const Testimonials = () => {
+  const testimonialItems: TestimonialItemProps[] = developerMeta.testimonials;
   return (
     <section className="testimonials">
       <h3 className="h3 testimonials-title">Testimonials</h3>
@@ -106,4 +92,4 @@ const Testimoniails = () => {
     </section>
   );
 };
-export default Testimoniails;
+export default Testimonials;

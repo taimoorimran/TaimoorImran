@@ -1,6 +1,6 @@
 import Clients from "@/components/about/clients";
 import Description from "@/components/about/description";
-import Testimoniails from "@/components/about/testimonials";
+import Testimonials from "@/components/about/testimonials";
 import Work from "@/components/about/work";
 
 const Page = () => {
@@ -11,7 +11,7 @@ const Page = () => {
       </header>
       <Description />
       <Work />
-      <Testimoniails />
+      <Testimonials />
       <Clients />
     </article>
   );

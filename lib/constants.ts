@@ -1,4 +1,4 @@
-import { EducationItemProps, ExperienceItemProps, ProjectItemProps, SkillItemProps } from "./interfaces";
+import { EducationItemProps, ExperienceItemProps, ProjectItemProps, SkillItemProps, TestimonialItemProps } from "./interfaces";
 
 const projectItems: ProjectItemProps[] = [
   {
@@ -105,6 +105,22 @@ const skills: SkillItemProps[] = [
     score: 70,
   },
 ];
+const testimonials: TestimonialItemProps[] = [
+  {
+    name: "Shakeel Ahmed",
+    description: "Good"
+  },
+  {
+    name: "Daniel lewis",
+    description: "V. Good",
+    imgSrc: "/images/stock/avatar-2.png"
+  },
+  {
+    name: "Daniel lewis",
+    description: "V. V. Good",
+    imgSrc: "/images/stock/avatar-3.png"
+  }
+]
 export const developerMeta = {
   name: "Taimoor Imran",
   designation: "Software Engineer",
@@ -123,5 +139,6 @@ export const developerMeta = {
   experience: experience,
   education: education,
   skills: skills,
-  projects: projectItems
+  projects: projectItems,
+  testimonials: testimonials
 };
