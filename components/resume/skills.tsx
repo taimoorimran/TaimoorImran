@@ -1,4 +1,5 @@
 import { Progress } from "@/components/ui/progress";
+import { developerMeta } from "@/lib/constants";
 import { SkillItemProps } from "@/lib/interfaces";
 
 const SkillItem = ({ name, score }: SkillItemProps) => {
@@ -15,16 +16,7 @@ const SkillItem = ({ name, score }: SkillItemProps) => {
   );
 };
 const Skills = () => {
-  const skillItems: SkillItemProps[] = [
-    {
-      name: "React",
-      score: 84,
-    },
-    {
-      name: "TypeScript",
-      score: 70,
-    },
-  ];
+  const skillItems: SkillItemProps[] = developerMeta.skills;
   return (
     <section className="skill">
       <h3 className="h3 skills-title">My skills</h3>

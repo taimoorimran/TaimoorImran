@@ -1,22 +1,8 @@
 import PortfolioItem from "@/components/portfolio/items";
+import { developerMeta } from "@/lib/constants";
 import { ProjectItemProps } from "@/lib/interfaces";
 const Page = () => {
-  const projectItems: ProjectItemProps[] = [
-    {
-      name: "Al-Mukhtar",
-      category: "Web Development",
-    },
-    {
-      name: "Lone Wolf",
-      category: "Web Development",
-      imgSrc: "/images/stock/project-2.png",
-    },
-    {
-      name: "Retirement Analyzer",
-      category: "Web Development",
-      imgSrc: "/images/stock/project-2.png",
-    },
-  ];
+  const projectItems: ProjectItemProps[] = developerMeta.projects;
   return (
     <article
       className="portfolio bg-eerie-white-2 dark:bg-eerie-black-2"

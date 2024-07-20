@@ -1,3 +1,4 @@
+import { developerMeta } from "@/lib/constants";
 import { EducationItemProps } from "@/lib/interfaces";
 import { MdOutlineMenuBook } from "react-icons/md";
 
@@ -27,17 +28,7 @@ const EducationItem = ({
   );
 };
 const Education = () => {
-  const educationItems: EducationItemProps[] = [
-    {
-      institute: "Iqra University",
-      startDate: "June 2014",
-      endDate: "August 2018",
-      education: "Bachelors of Computer Sciences",
-      description: [
-        "Received full scholarship from Ignite Pakistan for Final Year Project",
-      ],
-    },
-  ];
+  const educationItems: EducationItemProps[] = developerMeta.education;
   return (
     <section className="timeline">
       <div className="title-wrapper">
