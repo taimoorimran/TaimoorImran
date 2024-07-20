@@ -45,8 +45,8 @@ const ExperienceItem = ({
 
 const Experience = () => {
   const experienceItems: ExperienceItemProps[] = developerMeta.experience;
-
   return (
+    experienceItems.length > 0 &&
     <section className="timeline">
       <div className="title-wrapper">
         <div className="icon-box">

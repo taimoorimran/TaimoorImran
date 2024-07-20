@@ -30,6 +30,7 @@ const EducationItem = ({
 const Education = () => {
   const educationItems: EducationItemProps[] = developerMeta.education;
   return (
+    educationItems.length > 0 &&
     <section className="timeline">
       <div className="title-wrapper">
         <div className="icon-box">

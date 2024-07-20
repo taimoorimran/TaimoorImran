@@ -20,6 +20,7 @@ const ClientItem = ({ imgSrc, link }: ClientItemProps) => {
 const Clients = () => {
   const clientItems: ClientItemProps[] = developerMeta.clients;
   return (
+    clientItems.length > 0 &&
     <section className="clients">
       <h3 className="h3 clients-title">Clients</h3>
       <ul className="clients-list has-scrollbar">

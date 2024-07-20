@@ -145,18 +145,18 @@ const work: WorkItemProps[] = [
     description: "High-quality development of sites at the professional level.",
     imgSrc: "/images/stock/icon-dev.svg",
   },
-  {
-    title: "Mobile Apps",
-    description:
-      "Professional development of applications for iOS and Android.",
-    imgSrc: "/images/stock/icon-app.svg",
-  },
-  {
-    title: "Photography",
-    description:
-      "I make high-quality photos of any category at a professional level.",
-    imgSrc: "/images/stock/icon-photo.svg",
-  },
+  // {
+  //   title: "Mobile Apps",
+  //   description:
+  //     "Professional development of applications for iOS and Android.",
+  //   imgSrc: "/images/stock/icon-app.svg",
+  // },
+  // {
+  //   title: "Photography",
+  //   description:
+  //     "I make high-quality photos of any category at a professional level.",
+  //   imgSrc: "/images/stock/icon-photo.svg",
+  // },
 ];
 
 const clients: ClientItemProps[] = [{}, {}, {}, {}, {}, {}];

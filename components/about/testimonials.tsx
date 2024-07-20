@@ -73,6 +73,7 @@ const TestimonialItem = ({
 const Testimonials = () => {
   const testimonialItems: TestimonialItemProps[] = developerMeta.testimonials;
   return (
+    testimonialItems.length > 0 &&
     <section className="testimonials">
       <h3 className="h3 testimonials-title">Testimonials</h3>
       <ul className="testimonials-list has-scrollbar">

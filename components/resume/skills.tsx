@@ -18,6 +18,7 @@ const SkillItem = ({ name, score }: SkillItemProps) => {
 const Skills = () => {
   const skillItems: SkillItemProps[] = developerMeta.skills;
   return (
+    skillItems.length > 0 &&
     <section className="skill">
       <h3 className="h3 skills-title">My skills</h3>
       <ul className="skills-list content-card">
