@@ -46,42 +46,43 @@ const ExperienceItem = ({
 const Experience = () => {
   const experienceItems: ExperienceItemProps[] = developerMeta.experience;
   return (
-    experienceItems.length > 0 &&
-    <section className="timeline">
-      <div className="title-wrapper">
-        <div className="icon-box">
-          <MdOutlineWorkHistory className="size-5" />
+    experienceItems.length > 0 && (
+      <section className="timeline">
+        <div className="title-wrapper">
+          <div className="icon-box">
+            <MdOutlineWorkHistory className="size-5" />
+          </div>
+          <h3 className="h3">Experience</h3>
         </div>
-        <h3 className="h3">Experience</h3>
-      </div>
-      <ol className="timeline-list">
-        {experienceItems.map(
-          (
-            {
-              company,
-              designation,
-              startDate,
-              endDate,
-              description,
-              skills,
-            }: ExperienceItemProps,
-            key,
-          ) => {
-            return (
-              <ExperienceItem
-                key={`item_${company}_${key}`}
-                company={company}
-                startDate={startDate}
-                endDate={endDate}
-                designation={designation}
-                description={description}
-                skills={skills}
-              />
-            );
-          },
-        )}
-      </ol>
-    </section>
+        <ol className="timeline-list">
+          {experienceItems.map(
+            (
+              {
+                company,
+                designation,
+                startDate,
+                endDate,
+                description,
+                skills,
+              }: ExperienceItemProps,
+              key,
+            ) => {
+              return (
+                <ExperienceItem
+                  key={`item_${company}_${key}`}
+                  company={company}
+                  startDate={startDate}
+                  endDate={endDate}
+                  designation={designation}
+                  description={description}
+                  skills={skills}
+                />
+              );
+            },
+          )}
+        </ol>
+      </section>
+    )
   );
 };
 

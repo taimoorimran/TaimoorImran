@@ -23,22 +23,25 @@ const WorkItem = ({ imgSrc, title, description }: WorkItemProps) => {
 const Work = () => {
   const workItems: WorkItemProps[] = developerMeta.work;
   return (
-    workItems.length > 0 &&
-    <section className="service">
-      <h3 className="h3 service-title">What I&apos;m doing</h3>
-      <ul className="service-list">
-        {workItems.map(({ title, description, imgSrc }: WorkItemProps, key) => {
-          return (
-            <WorkItem
-              key={`item_${title}_${key}`}
-              title={title}
-              description={description}
-              imgSrc={imgSrc}
-            />
-          );
-        })}
-      </ul>
-    </section>
+    workItems.length > 0 && (
+      <section className="service">
+        <h3 className="h3 service-title">What I&apos;m doing</h3>
+        <ul className="service-list">
+          {workItems.map(
+            ({ title, description, imgSrc }: WorkItemProps, key) => {
+              return (
+                <WorkItem
+                  key={`item_${title}_${key}`}
+                  title={title}
+                  description={description}
+                  imgSrc={imgSrc}
+                />
+              );
+            },
+          )}
+        </ul>
+      </section>
+    )
   );
 };
 

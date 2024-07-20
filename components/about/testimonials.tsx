@@ -73,24 +73,25 @@ const TestimonialItem = ({
 const Testimonials = () => {
   const testimonialItems: TestimonialItemProps[] = developerMeta.testimonials;
   return (
-    testimonialItems.length > 0 &&
-    <section className="testimonials">
-      <h3 className="h3 testimonials-title">Testimonials</h3>
-      <ul className="testimonials-list has-scrollbar">
-        {testimonialItems.map(
-          ({ name, description, imgSrc }: TestimonialItemProps, key) => {
-            return (
-              <TestimonialItem
-                key={`item_${name}_${key}`}
-                name={name}
-                description={description}
-                imgSrc={imgSrc}
-              />
-            );
-          },
-        )}
-      </ul>
-    </section>
+    testimonialItems.length > 0 && (
+      <section className="testimonials">
+        <h3 className="h3 testimonials-title">Testimonials</h3>
+        <ul className="testimonials-list has-scrollbar">
+          {testimonialItems.map(
+            ({ name, description, imgSrc }: TestimonialItemProps, key) => {
+              return (
+                <TestimonialItem
+                  key={`item_${name}_${key}`}
+                  name={name}
+                  description={description}
+                  imgSrc={imgSrc}
+                />
+              );
+            },
+          )}
+        </ul>
+      </section>
+    )
   );
 };
 export default Testimonials;

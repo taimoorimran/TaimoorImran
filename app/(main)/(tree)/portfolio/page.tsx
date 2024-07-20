@@ -10,28 +10,28 @@ const Page = () => {
         <h2 className="h2 article-title">Portfolio</h2>
       </header>
       <section className="projects">
-        {
-          projectItems.length > 0 ?
-            <ul className="project-list">
-              {projectItems.map(
-                (
-                  { name, category, imgSrc, description }: ProjectItemProps,
-                  key,
-                ) => {
-                  return (
-                    <PortfolioItem
-                      key={`item_${name}_${key}`}
-                      name={name}
-                      category={category}
-                      imgSrc={imgSrc}
-                      description={description}
-                    />
-                  );
-                },
-              )}
-            </ul> :
-            <Empty />
-        }
+        {projectItems.length > 0 ? (
+          <ul className="project-list">
+            {projectItems.map(
+              (
+                { name, category, imgSrc, description }: ProjectItemProps,
+                key,
+              ) => {
+                return (
+                  <PortfolioItem
+                    key={`item_${name}_${key}`}
+                    name={name}
+                    category={category}
+                    imgSrc={imgSrc}
+                    description={description}
+                  />
+                );
+              },
+            )}
+          </ul>
+        ) : (
+          <Empty />
+        )}
       </section>
     </article>
   );
