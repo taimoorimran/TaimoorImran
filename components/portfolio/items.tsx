@@ -5,9 +5,7 @@ import { IoEyeOutline } from "react-icons/io5";
 
 const PortfolioItem = ({ imgSrc, url, name, category }: ProjectItemProps) => {
   return (
-    <li
-      className="project-item"
-    >
+    <li className="project-item">
       <Link href={url ? url : "/portfolio/#"}>
         <figure className="project-img">
           <div className="project-item-icon-box">

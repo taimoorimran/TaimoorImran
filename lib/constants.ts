@@ -1,4 +1,12 @@
-import { ClientItemProps, EducationItemProps, ExperienceItemProps, ProjectItemProps, SkillItemProps, TestimonialItemProps, WorkItemProps } from "./interfaces";
+import {
+  ClientItemProps,
+  EducationItemProps,
+  ExperienceItemProps,
+  ProjectItemProps,
+  SkillItemProps,
+  TestimonialItemProps,
+  WorkItemProps,
+} from "./interfaces";
 
 const projectItems: ProjectItemProps[] = [
   {
@@ -112,18 +120,18 @@ const skills: SkillItemProps[] = [
 const testimonials: TestimonialItemProps[] = [
   {
     name: "Shakeel Ahmed",
-    description: "Good"
+    description: "Good",
   },
   {
     name: "Daniel lewis",
     description: "V. Good",
-    imgSrc: "/images/stock/avatar-2.png"
+    imgSrc: "/images/stock/avatar-2.png",
   },
   {
     name: "Daniel lewis",
     description: "V. V. Good",
-    imgSrc: "/images/stock/avatar-3.png"
-  }
+    imgSrc: "/images/stock/avatar-3.png",
+  },
 ];
 
 const work: WorkItemProps[] = [
@@ -134,8 +142,7 @@ const work: WorkItemProps[] = [
   },
   {
     title: "Web Development",
-    description:
-      "High-quality development of sites at the professional level.",
+    description: "High-quality development of sites at the professional level.",
     imgSrc: "/images/stock/icon-dev.svg",
   },
   {
@@ -175,5 +182,5 @@ export const developerMeta = {
   projects: projectItems,
   testimonials: testimonials,
   work: work,
-  clients: clients
+  clients: clients,
 };

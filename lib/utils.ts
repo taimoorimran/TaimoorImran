@@ -12,4 +12,4 @@ export const getFormattedText = (row: string, delimeter: string = ":") => {
     return row;
   }
   return `<span class='text-lg'>${splittedStr[0]}:</span> ${splittedStr[1]}`;
-}
+};

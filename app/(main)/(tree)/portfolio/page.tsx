@@ -4,9 +4,7 @@ import { ProjectItemProps } from "@/lib/interfaces";
 const Page = () => {
   const projectItems: ProjectItemProps[] = developerMeta.projects;
   return (
-    <article
-      className="portfolio bg-eerie-white-2 dark:bg-eerie-black-2"
-    >
+    <article className="portfolio bg-eerie-white-2 dark:bg-eerie-black-2">
       <header>
         <h2 className="h2 article-title">Portfolio</h2>
       </header>

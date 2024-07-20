@@ -21,7 +21,7 @@ const WorkItem = ({ imgSrc, title, description }: WorkItemProps) => {
   );
 };
 const Work = () => {
-  const workItems: WorkItemProps[] = developerMeta.work
+  const workItems: WorkItemProps[] = developerMeta.work;
   return (
     <section className="service">
       <h3 className="h3 service-title">What I&apos;m doing</h3>
