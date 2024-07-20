@@ -1,3 +1,4 @@
+import { developerMeta } from "@/lib/constants";
 import { WorkItemProps } from "@/lib/interfaces";
 import Image from "next/image";
 
@@ -20,31 +21,7 @@ const WorkItem = ({ imgSrc, title, description }: WorkItemProps) => {
   );
 };
 const Work = () => {
-  const workItems: WorkItemProps[] = [
-    {
-      title: "Web Design",
-      description:
-        "The most modern and high-quality design made at a professional level.",
-    },
-    {
-      title: "Web Development",
-      description:
-        "High-quality development of sites at the professional level.",
-      imgSrc: "/images/stock/icon-dev.svg",
-    },
-    {
-      title: "Mobile Apps",
-      description:
-        "Professional development of applications for iOS and Android.",
-      imgSrc: "/images/stock/icon-app.svg",
-    },
-    {
-      title: "Photography",
-      description:
-        "I make high-quality photos of any category at a professional level.",
-      imgSrc: "/images/stock/icon-photo.svg",
-    },
-  ];
+  const workItems: WorkItemProps[] = developerMeta.work
   return (
     <section className="service">
       <h3 className="h3 service-title">What I&apos;m doing</h3>

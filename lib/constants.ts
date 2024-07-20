@@ -1,4 +1,4 @@
-import { EducationItemProps, ExperienceItemProps, ProjectItemProps, SkillItemProps, TestimonialItemProps } from "./interfaces";
+import { ClientItemProps, EducationItemProps, ExperienceItemProps, ProjectItemProps, SkillItemProps, TestimonialItemProps, WorkItemProps } from "./interfaces";
 
 const projectItems: ProjectItemProps[] = [
   {
@@ -16,6 +16,7 @@ const projectItems: ProjectItemProps[] = [
     imgSrc: "/images/stock/project-2.png",
   },
 ];
+
 const experience: ExperienceItemProps[] = [
   {
     company: "Center of Non-Communicable Diseases",
@@ -84,6 +85,7 @@ const experience: ExperienceItemProps[] = [
     skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB"],
   },
 ];
+
 const education: EducationItemProps[] = [
   {
     institute: "Iqra University",
@@ -95,6 +97,7 @@ const education: EducationItemProps[] = [
     ],
   },
 ];
+
 const skills: SkillItemProps[] = [
   {
     name: "React",
@@ -105,6 +108,7 @@ const skills: SkillItemProps[] = [
     score: 70,
   },
 ];
+
 const testimonials: TestimonialItemProps[] = [
   {
     name: "Shakeel Ahmed",
@@ -120,7 +124,36 @@ const testimonials: TestimonialItemProps[] = [
     description: "V. V. Good",
     imgSrc: "/images/stock/avatar-3.png"
   }
-]
+];
+
+const work: WorkItemProps[] = [
+  {
+    title: "Web Design",
+    description:
+      "The most modern and high-quality design made at a professional level.",
+  },
+  {
+    title: "Web Development",
+    description:
+      "High-quality development of sites at the professional level.",
+    imgSrc: "/images/stock/icon-dev.svg",
+  },
+  {
+    title: "Mobile Apps",
+    description:
+      "Professional development of applications for iOS and Android.",
+    imgSrc: "/images/stock/icon-app.svg",
+  },
+  {
+    title: "Photography",
+    description:
+      "I make high-quality photos of any category at a professional level.",
+    imgSrc: "/images/stock/icon-photo.svg",
+  },
+];
+
+const clients: ClientItemProps[] = [{}, {}, {}, {}, {}, {}];
+
 export const developerMeta = {
   name: "Taimoor Imran",
   designation: "Software Engineer",
@@ -140,5 +173,7 @@ export const developerMeta = {
   education: education,
   skills: skills,
   projects: projectItems,
-  testimonials: testimonials
+  testimonials: testimonials,
+  work: work,
+  clients: clients
 };

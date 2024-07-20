@@ -1,3 +1,4 @@
+import { developerMeta } from "@/lib/constants";
 import { ClientItemProps } from "@/lib/interfaces";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,7 +18,7 @@ const ClientItem = ({ imgSrc, link }: ClientItemProps) => {
   );
 };
 const Clients = () => {
-  const clientItems: ClientItemProps[] = [{}, {}, {}, {}, {}, {}];
+  const clientItems: ClientItemProps[] = developerMeta.clients;
   return (
     <section className="clients">
       <h3 className="h3 clients-title">Clients</h3>
