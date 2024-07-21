@@ -47,7 +47,8 @@ const experience: ExperienceItemProps[] = [
       "Performance Optimization: Implemented best practices in code optimization and performance tuning, significantly reducing page load times and increasing application responsiveness.",
       "Version Control and CI/CD: Utilized Git for version control and integrated CI/CD pipelines to streamline development processes and ensure continuous delivery.",
     ],
-    skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB"],
+    skills: [
+    ],
   },
   {
     company: "ZEPCOM",
@@ -61,7 +62,9 @@ const experience: ExperienceItemProps[] = [
       "Performance Enhancement: Applied advanced code optimization techniques, resulting in a 45% reduction in page load times and improved application responsiveness.",
       "Continuous Integration and Delivery: Managed version control using Git and established CI/CD pipelines, streamlining development processes and ensuring continuous delivery.",
     ],
-    skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB"],
+    skills: [
+      "Embedded JavaScript (EJS)", "Microsoft Teams", "Next.js", "Heroku", "jQuery", "Node.js", "GitHub", "Redux.js", "OAuth", "Ant Design", "MySQL", "JavaScript", "Express.js", "Bootstrap", "Tailwind CSS", "TypeScript", "Azure DevOps", "React.js", "Jira", "HTML", "Cascading Style Sheets (CSS)", "DevOps", "API Development", "Agile Methodologies", "Scrum", "Version Control", "Continuous Integration and Continuous Delivery (CI/CD)", "Dashboards", "Front-End Development"
+    ],
   },
   {
     company: "7CTECH",
@@ -69,16 +72,18 @@ const experience: ExperienceItemProps[] = [
     endDate: "April 2021",
     designation: "React Developer",
     description: [
-      "System Modernization: Transitioned a major retirement analysis platform from embedded JavaScript to React, enhancing performance and user experience. Integrated SASS for consistent design implementation and Redis for effective caching.",
-      "Client Engagement: Maintained consistent communication with US-based clients through daily scrum meetings, leading to a 95% client satisfaction rate.",
-      "Project Coordination: Led thorough requirements gathering, developed detailed project timelines, and ensured on-time project delivery, meeting or exceeding client expectations.",
-      "Performance Enhancement: Applied advanced code optimization techniques, resulting in a 45% reduction in page load times and improved application responsiveness.",
-      "Continuous Integration and Delivery: Managed version control using Git and established CI/CD pipelines, streamlining development processes and ensuring continuous delivery.",
+      "Module Migration: Transitioned key modules of fashionpass.com from legacy systems to Next.js, enhancing the performance and scalability of the platform.",
+      "Frontend and API Development: Developed user-friendly front-end interfaces and robust APIs using Next.js and SASS, improving the overall user experience.",
+      "Project Deployment: Deployed multiple projects on platforms such as Heroku, Amazon Web Services (AWS), and Vercel, ensuring reliability and scalability.",
+      "Client Collaboration: Regularly participated in client meetings, ensuring clear communication and alignment with project goals, contributing to high client satisfaction.",
+      "Agile Methodology: Followed agile practices, using JIRA for task management and version control systems like Git, to streamline development processes and ensure timely delivery.",
     ],
-    skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB"],
+    skills: [
+      "Firebase", "Jira", "GitHub", "Redux.js", "MySQL", "MongoDB", "TypeScript", "React.js", "Next.js", "Bootstrap", "SASS", "Material-UI", "Object-Relational Mapping (ORM)", "zod", "Continuous Integration and Continuous Delivery (CI/CD)", "Agile Methodologies", "Scrum", "JavaScript", "Unit Testing", "Version Control", "Node.js", "Cascading Style Sheets (CSS)", "Dashboards", "Front-End Development",
+    ],
   },
   {
-    company: "Markematics (Pvt.) Ltd. ",
+    company: "Markematics (Pvt.) Ltd.",
     startDate: "March 2019",
     endDate: "July 2020",
     designation: "Team Lead / Assistant Manager - Technology & Innovation",
@@ -90,7 +95,22 @@ const experience: ExperienceItemProps[] = [
       "Innovation During COVID-19: Launched online surveys for public research during the pandemic, opening new dimensions of data collection and analysis for clients.",
       "Technical Leadership: Led the development and implementation of the survey system using React Native, Lodash, and SurveyJS, while maintaining robust project management practices.",
     ],
-    skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB"],
+    skills: ["Firebase", "AngularJS", "jQuery", "Survey Design", "ASP.NET MVC", "GitHub", "React Native", "Survey Research", "SQL", "ASP.NET Web API", "React.js", "Bootstrap", "Cascading Style Sheets (CSS)", "HTML", "Version Control", "Git", "Agile Methodologies", "Team Leadership", "Problem Solving", "API Development", "Software Development", "DevOps", "Data Modeling", "Next.js", "Dashboards"],
+  },
+  {
+    company: "Kingdom Vision",
+    startDate: "June 2017",
+    endDate: "March 2019",
+    designation: "Team Lead / Full-stack Developer",
+    description: [
+      "Survey Process Digitization: Transformed FMCG surveys from paper-based methods to dynamic JavaScript forms, significantly improving data accuracy and reducing data compromise.",
+      "Efficiency Enhancement: Streamlined the survey process, reducing completion time from one month to less than half an hour by automating data synchronization and QA processes using React Native and SurveyJS.",
+      "Data Management: Enabled real-time data syncing and dashboarding with accurate geo-tagging and audio recordings, leveraging local storage on Android tablets and synchronization at the end of each day.",
+      "Client Collaboration: Gathered requirements from the client servicing team and ensured effective communication and task delegation to a team of 2 developers and 1 data analyst.",
+      "Innovation During COVID-19: Launched online surveys for public research during the pandemic, opening new dimensions of data collection and analysis for clients.",
+      "Technical Leadership: Led the development and implementation of the survey system using React Native, Lodash, and SurveyJS, while maintaining robust project management practices.",
+    ],
+    skills: ["Firebase", "AngularJS", "jQuery", "Survey Design", "ASP.NET MVC", "GitHub", "React Native", "Survey Research", "SQL", "ASP.NET Web API", "React.js", "Bootstrap", "Cascading Style Sheets (CSS)", "HTML", "Version Control", "Git", "Agile Methodologies", "Team Leadership", "Problem Solving", "API Development", "Software Development", "DevOps", "Data Modeling", "Next.js", "Dashboards"],
   },
 ];
 
