@@ -48,6 +48,7 @@ const experience: ExperienceItemProps[] = [
       "Version Control and CI/CD: Utilized Git for version control and integrated CI/CD pipelines to streamline development processes and ensure continuous delivery.",
     ],
     skills: [
+      "Next.js", "Node.js", "GitHub", "Redux.js", "MySQL", "React Native", "JavaScript", "Express.js", "MongoDB", "Tailwind CSS", "TypeScript", "Sourcetree", "React.js", "Jira", "HTML", "API Development", "DevOps", "Software Development", "Agile Methodologies", "Scrum", "Cascading Style Sheets (CSS)", "Vercel", "Continuous Integration and Continuous Delivery (CI/CD)", "Version Control", "Unit Testing", "Microsoft Teams", "Dashboards", "Front-End Development"
     ],
   },
   {
@@ -103,14 +104,32 @@ const experience: ExperienceItemProps[] = [
     endDate: "March 2019",
     designation: "Team Lead / Full-stack Developer",
     description: [
-      "Survey Process Digitization: Transformed FMCG surveys from paper-based methods to dynamic JavaScript forms, significantly improving data accuracy and reducing data compromise.",
-      "Efficiency Enhancement: Streamlined the survey process, reducing completion time from one month to less than half an hour by automating data synchronization and QA processes using React Native and SurveyJS.",
-      "Data Management: Enabled real-time data syncing and dashboarding with accurate geo-tagging and audio recordings, leveraging local storage on Android tablets and synchronization at the end of each day.",
-      "Client Collaboration: Gathered requirements from the client servicing team and ensured effective communication and task delegation to a team of 2 developers and 1 data analyst.",
-      "Innovation During COVID-19: Launched online surveys for public research during the pandemic, opening new dimensions of data collection and analysis for clients.",
-      "Technical Leadership: Led the development and implementation of the survey system using React Native, Lodash, and SurveyJS, while maintaining robust project management practices.",
+      "Promoted to Team Lead: Elevated to the role of Team Lead, overseeing the development of a comprehensive website and web apps.",
+      "Integration and Consolidation: Integrated multiple project databases using PHP, Postgres, and MySQL to create consolidated reports and overviews, optimizing data accessibility and analysis.",
+      "Technology Stack: Utilized AngularJS for frontend development and PHP with Slim framework for backend API routing, ensuring robust performance and scalability.",
+      "Feature Development: Implemented new features such as user registration and PayPal payment integration, enhancing workflow efficiency and saving client resources.",
+      "Client Communication: Interacted directly with clients to gather requirements and specifications, ensuring alignment with project goals and delivering tailored solutions.",
+      "Version Control and Deployment: Managed version control systems and deployed systems on Linux-based hosting environments, ensuring stability and reliability of applications.",
     ],
-    skills: ["Firebase", "AngularJS", "jQuery", "Survey Design", "ASP.NET MVC", "GitHub", "React Native", "Survey Research", "SQL", "ASP.NET Web API", "React.js", "Bootstrap", "Cascading Style Sheets (CSS)", "HTML", "Version Control", "Git", "Agile Methodologies", "Team Leadership", "Problem Solving", "API Development", "Software Development", "DevOps", "Data Modeling", "Next.js", "Dashboards"],
+    skills: [
+      "PHP", "AngularJS", "Slim Framework", "GitHub", "MySQL", "AJAX", "CodeIgniter", "JavaScript", "Payment Gateways", "React.js", "Databases", "PostgreSQL", "WordPress", "Front-End Development", "Server Side JavaScript", "HTML", "Cascading Style Sheets (CSS)", "Material-UI", "Requirements Gathering", "Requirements Analysis", "Version Control", "Git",
+    ],
+  },
+  {
+    company: "Mubstech Pvt. Ltd.",
+    startDate: "August 2016",
+    endDate: "June 2017",
+    designation: "Back End Developer",
+    description: [
+      "System Development: Spearheaded the development of a comprehensive Hospital ERP system using the CodeIgniter framework, focusing on patient management, appointments, billing, and inventory modules.",
+      "Functional Design: Designed and implemented key functionalities to streamline hospital operations and improve efficiency in patient care and administrative tasks.",
+      "Stakeholder Collaboration: Worked closely with stakeholders to gather requirements, analyze workflows, and customize the ERP system to meet specific hospital needs, ensuring alignment with organizational goals.",
+      "Scalability and Performance: Implemented best practices to ensure system scalability, performance, and security, conducting rigorous testing and quality assurance throughout the development lifecycle.",
+      "Support and Maintenance: Provided ongoing support and maintenance, promptly addressing issues and implementing enhancements to optimize system functionality and user experience.",
+    ],
+    skills: [
+      "PHP", "MySQL", "AJAX", "JavaScript", "jQuery", "CodeIgniter", "Server Side", "Server Side Programming", "Bootstrap", "Cascading Style Sheets (CSS)", "HTML",
+    ],
   },
 ];
 
