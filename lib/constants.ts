@@ -10,6 +10,14 @@ import {
 
 const projectItems: ProjectItemProps[] = [
   {
+    name: "ARY Laguna",
+    category: "Web Development",
+  },
+  {
+    name: "AGW.",
+    category: "Web Development",
+  },
+  {
     name: "Al-Mukhtar",
     category: "Web Development",
   },
@@ -23,13 +31,26 @@ const projectItems: ProjectItemProps[] = [
     category: "Web Development",
     imgSrc: "/images/stock/project-2.png",
   },
+  {
+    name: "Liquid IV",
+    category: "Web Development",
+    imgSrc: "/images/stock/project-2.png",
+  },
 ];
 
 const experience: ExperienceItemProps[] = [
   {
+    company: "ARY Services Pvt. Ltd.",
+    startDate: "October 2023",
+    endDate: "Present",
+    designation: "Assistant Project Manager - Software Department",
+    skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB", "Laravel", "PHP", "ZOHO CRM", "MOODLE"],
+    description: [],
+  },
+  {
     company: "Center of Non-Communicable Diseases",
     startDate: "July 2023",
-    endDate: "Present",
+    endDate: "May 2024",
     designation: "Project Manager - Technology & Innovation Dept.",
     skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB"],
     description: [],
@@ -311,6 +332,14 @@ const skills: SkillItemProps[] = [
     score: 84,
   },
   {
+    name: "Laravel",
+    score: 65,
+  },
+  {
+    name: "PHP",
+    score: 72,
+  },
+  {
     name: "TypeScript",
     score: 70,
   },
@@ -364,7 +393,7 @@ export const developerMeta = {
   name: "Taimoor Imran",
   designation: "Software Engineer",
   designationSubTitle:
-    "Senior Frontend Engineer | Next.js, React, TypeScript Expert | 7+ Years in Web Development | UI/UX Specialist | Vercel, GCP | CI/CD, Tailwind CSS, ShadCN Design System",
+    "Senior Frontend Engineer | Next.js, React, TypeScript, Laravel, PHP | 8 Years in Web Development | UI/UX Specialist | Vercel, GCP | CI/CD, Tailwind CSS, ShadCN Design System",
   email: "taimoorimran9@gmail.com",
   mobile: "+92331022301",
   dob: "",

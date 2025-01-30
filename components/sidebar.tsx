@@ -78,16 +78,16 @@ const Sidebar = () => {
           >
             <Mail className="size-4" />
           </ContactItem>
-          <ContactItem
+          {/* <ContactItem
             title="Phone"
             text={developerMeta.mobile}
             link={`tel:${developerMeta.mobile}`}
           >
             <Smartphone className="size-4" />
-          </ContactItem>
-          <ContactItem title="Birthday" text={developerMeta.dobDisplay}>
+          </ContactItem> */}
+          {/* <ContactItem title="Birthday" text={developerMeta.dobDisplay}>
             <CalendarRange className="size-4" />
-          </ContactItem>
+          </ContactItem> */}
           <ContactItem title="Location" text={developerMeta.location}>
             <MapPin className="size-4" />
           </ContactItem>
@@ -96,10 +96,10 @@ const Sidebar = () => {
         <Socials />
       </div>
 
-      <div className="mt-3 flex items-center justify-center">
+      {/* <div className="mt-3 flex items-center justify-center">
         <p className="text-sm p-1">Theme:</p>
         <ThemeToggle />
-      </div>
+      </div> */}
     </aside>
   );
 };

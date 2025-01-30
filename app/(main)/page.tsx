@@ -11,8 +11,8 @@ const Page = () => {
       </header>
       <Description />
       <Work />
-      <Testimonials />
-      <Clients />
+      {/* <Testimonials />
+      <Clients /> */}
     </article>
   );
 };

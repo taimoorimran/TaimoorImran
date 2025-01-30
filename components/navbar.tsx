@@ -32,7 +32,7 @@ const Navbar = () => {
             </button>
           </Link>
         </li>
-        <li className="navbar-item">
+        {/* <li className="navbar-item">
           <Link href="/blog">
             <button
               className={`navbar-link ${pathname == "/blog" && "active"}`}
@@ -49,7 +49,7 @@ const Navbar = () => {
               Contact
             </button>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
