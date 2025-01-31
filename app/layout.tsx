@@ -1,4 +1,4 @@
-import { scan } from 'react-scan';
+import { scan } from "react-scan";
 import React from "react";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -7,7 +7,7 @@ import { developerMeta } from "@/lib/constants";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
   scan({
     enabled: true,
     log: true, // logs render info to console (default: false)
@@ -59,9 +59,7 @@ export default function RootLayout({
         enableSystem
         disableTransitionOnChange
       >
-        <body
-          className={cn("bg-smoky-dark", poppins.className)}
-        >
+        <body className={cn("bg-smoky-dark", poppins.className)}>
           {children}
         </body>
       </ThemeProvider>

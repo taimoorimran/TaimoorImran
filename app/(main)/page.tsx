@@ -1,6 +1,7 @@
-import Clients from "@/components/about/clients";
+"use client";
+// import Clients from "@/components/about/clients";
 import Description from "@/components/about/description";
-import Testimonials from "@/components/about/testimonials";
+// import Testimonials from "@/components/about/testimonials";
 import Work from "@/components/about/work";
 
 const Page = () => {

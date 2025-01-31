@@ -1,14 +1,14 @@
 import React from "react";
 import { developerMeta } from "@/lib/constants";
 import {
-  CalendarRange,
+  // CalendarRange,
   ChevronDown,
   Mail,
   MapPin,
-  Smartphone,
+  // Smartphone,
 } from "lucide-react";
 import Image from "next/image";
-import { ThemeToggle } from "./theme-toggle";
+// import { ThemeToggle } from "./theme-toggle";
 import Socials from "./shared/socials";
 import Link from "next/link";
 import { ContactItemProps } from "@/lib/interfaces";
