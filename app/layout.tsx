@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { developerMeta } from "@/lib/constants";
-import { ThemeProvider } from "@/components/theme-provider";
+// import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 
 if (typeof window !== "undefined") {
@@ -53,16 +53,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/icons/site.webmanifest" />
       </head>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        <body className={cn("bg-smoky-dark", poppins.className)}>
-          {children}
-        </body>
-      </ThemeProvider>
+      <body className={cn("bg-smoky-dark", poppins.className)}>{children}</body>
     </html>
   );
 }

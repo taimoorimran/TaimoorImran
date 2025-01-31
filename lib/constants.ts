@@ -44,7 +44,17 @@ const experience: ExperienceItemProps[] = [
     startDate: "October 2023",
     endDate: "Present",
     designation: "Assistant Project Manager - Software Department",
-    skills: ["React", "NextJS", "JavaScript", "MySQL", "MongoDB", "Laravel", "PHP", "ZOHO CRM", "MOODLE"],
+    skills: [
+      "React",
+      "NextJS",
+      "JavaScript",
+      "MySQL",
+      "MongoDB",
+      "Laravel",
+      "PHP",
+      "ZOHO CRM",
+      "MOODLE",
+    ],
     description: [],
   },
   {

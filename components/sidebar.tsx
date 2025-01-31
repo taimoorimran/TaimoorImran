@@ -31,7 +31,7 @@ const ContactItem = ({ children, title, link, text }: ContactItemProps) => (
 
 const Sidebar = () => {
   return (
-    <aside className="sidebar bg-eerie-white-2 dark:bg-eerie-black-2">
+    <aside className="sidebar bg-eerie-black-2">
       <div className="sidebar-info">
         <figure className="avatar-box">
           <Image
